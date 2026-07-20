@@ -1,0 +1,15 @@
+[Unit]
+Description=Pokemon IRC bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pokebot
+WorkingDirectory=/opt/pokebot
+ExecStart=/opt/pokebot/venv/bin/python /opt/pokebot/bot.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
