@@ -1,0 +1,1 @@
+flyctl deploy --build-only --push -a pokebot-rrfylq --image-label deployment-2bf6ac22c0898261a8c5c3ec559cdf5b --depot=false
